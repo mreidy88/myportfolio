@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+.portfolio{
+    background-color: #280137;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-position: 50% 5%;
+  }
+  
+ h3{
+    display: flex;
+    color: #9dbcd4;
+    font-family: 'Limelight', cursive;
+    font-size: 60px;
+    justify-content: center;
+    text-shadow: 0 0 5px #FF0000;
+  }
+p {
+  display: flex;
+  justify-content: center;
+  color: aquamarine;
+  text-shadow: 0 0 5px gold;
+}
+  
+  #portfolioImg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    background-position: 50% 5%;
+
+  }
+  #tradesImgs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+  }
+
+  #redSqImgs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+  }
+
+  
+  @media only screen and (max-width: 415px){
+    #portfolioImg{
+      width: 375px;
+      height: 274px;
+      flex-direction: column;
+      overflow-x: auto;
+      /* -webkit-overflow-scrolling: touch; */
+      scroll-snap-type: x mandatory;  
+      scroll-behavior: smooth;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    #tradesImgs {
+        width: 300px;
+        flex-shrink: 0;
+        height: 95%;
+        scroll-snap-align: start;
+      }
+  
+    #redSqImgs {
+      width: 300px;
+      flex-shrink: 0;
+      height: 95%;
+      scroll-snap-align: start;
+    }
+  }
+  @media only screen and (max-width: 800px) and (min-width: 416px){
+    #portfolioImg {
+      width: 750px;
+      height: 274px;
+      flex-direction: column;
+      overflow-x: auto;
+      /* -webkit-overflow-scrolling: touch; */
+      scroll-snap-type: x mandatory;  
+      scroll-behavior: smooth;
+    }
+  
+      #tradesImgs {
+      width: 290px;
+      flex-shrink: 0;
+      height: 95%;
+      scroll-snap-align: start;
+    }
+      
+    #redSqImgs {
+        width: 290px;
+        flex-shrink: 0;
+        height: 95%;
+        scroll-snap-align: start;
+      }
+    #RFSimgs {
+      width: 290px;
+      flex-shrink: 0;
+      height: 95%;
+      scroll-snap-align: start;
+    }
+  }
